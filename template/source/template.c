@@ -17,6 +17,7 @@ int main(void) {
 	// the vblank interrupt must be enabled for VBlankIntrWait() to work
 	// since the default dispatcher handles the bios flags no vblank handler
 	// is required
+	// 
 	irqInit();
 	irqEnable(IRQ_VBLANK);
 
